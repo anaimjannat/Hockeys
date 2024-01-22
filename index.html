@@ -26,6 +26,10 @@
             }
         }
     </script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
@@ -34,43 +38,111 @@
 
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope px-9 lg:px-32">
     <header>
         <nav>
-            <div class="navbar bg-base-100 px-32">
+            <div class="navbar bg-base-100 my-8 lg:my-12">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-base w-52">
+                            <li><a>Home</a></li>
+                            <li> <a>About</a> </li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-base w-52">
+                    <a class=" text-2xl lg:text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
                         <li><a>Home</a></li>
                         <li> <a>About</a> </li>
                         <li><a>Pages</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact</a></li>
                     </ul>
-                  </div>
-                  <a class="btn btn-ghost text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-base">
-                    <li><a>Home</a></li>
-                    <li> <a>About</a> </li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
                 </div>
                 <div class="navbar-end">
-
-                  <a class="btn  bg-hockey-primary text-white">Get Ticket</a>
+                    <i class="fa-solid fa-magnifying-glass px-6 text-[#89898B]"></i>
+                    <a class="btn  bg-hockey-primary text-white">Get Ticket</a>
                 </div>
-              </div>
+            </div>
         </nav>
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <main> 
+    <main>
+        <!-- Progress section -->
+        <div class="border-t border-dashed border-gray-300 my-10 lg:my-20"></div>
+        <div class="">
+            <div class=" text-center">
+                <h1 class="font-extrabold text-4xl">
+                    Professional Hockeys Club
+                </h1>
+                <p class="text-base text-[#13131899] text-center lg:mx-52">
+                    Crafting victories on ice, where skill meets strategy. Welcome to the heart of professional hockey
+                    excellence. Unleash the power of the puck with our elite club of champions!
+                </p>
+            </div>
+            <div class="border-t border-dashed border-gray-300 my-6 lg:my-8"></div>
+            <div class="text-center grid gap-5 lg:grid-cols-4 my-10">
+                <div>
+                    <div class="radial-progress text-[#FF4240] mb-6" style="--value:87;" role="progressbar">87%</div>
+                    <div>
+                        <h1 class="text-xl font-semibold">Prayer Facility</h1>
+                        <p class="text-base font-normal">A sacred space for solace and connection</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#49D293] mb-6" style="--value:95;" role="progressbar">95%</div>
+                    <div>
+                        <h1 class="text-xl font-semibold">Experienced Coach</h1>
+                        <p class="text-base font-normal"> Guiding athletes to greatness</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#FFB546] mb-6" style="--value:90;" role="progressbar">90%</div>
+                    <div>
+                        <h1  class="text-xl font-semibold">Senior Player</h1>
+                        <p class="text-base font-normal">With a legacy written in every play</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#4C8DF1] mb-6" style="--value:80;" role="progressbar">80%</div>
+                    <div>
+                        <h1  class="text-xl font-semibold">Training Ground</h1>
+                        <p class="text-base font-normal ">Where dedication meets the grind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Program Section -->
+        <div>
 
+        </div>
     </main>
     <footer>
 
